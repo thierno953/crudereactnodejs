@@ -14,6 +14,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 connectDatabase();
 
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
